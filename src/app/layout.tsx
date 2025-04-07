@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { fontVariables } from '@/lib/fonts';
 import './globals.css';
+import { ThemeProvider } from '@/components/clientThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Veysel Demirel • Veysel in the Digital World',
@@ -14,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fontVariables} antialiased`}>
-      <body className="bg-background-default text-foreground-default">{children}</body>
+    <html lang="en" className={`${fontVariables} antialiased`} suppressHydrationWarning>
+      <body className="bg-background-default text-foreground-default">
+        <ThemeProvider attribute="data-theme" defaultTheme="system" enableColorScheme enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
