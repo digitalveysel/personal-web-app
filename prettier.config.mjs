@@ -1,7 +1,5 @@
-// prettier.config.js, .prettierrc.js, prettier.config.mjs, or .prettierrc.mjs
-
 /**
- * @see https://prettier.io/docs/configuration
+ * @filename prettier.config.mjs
  * @type {import("prettier").Config}
  */
 const config = {
