@@ -35,6 +35,7 @@ const config = {
   arrowParens: 'always',
   embeddedLanguageFormatting: 'auto',
   htmlWhitespaceSensitivity: 'css',
+  plugins: ["prettier-plugin-tailwindcss"]
 };
 
 export default config;
