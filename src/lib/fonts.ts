@@ -1,6 +1,6 @@
 import { Montserrat, Montserrat_Alternates, Libre_Barcode_128_Text } from 'next/font/google';
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   display: 'swap',
   variable: '--font-montserrat',
   style: ['normal', 'italic'],
@@ -8,7 +8,7 @@ export const montserrat = Montserrat({
   subsets: ['latin'],
 });
 
-export const montserratAlternates = Montserrat_Alternates({
+const montserratAlternates = Montserrat_Alternates({
   display: 'swap',
   variable: '--font-montserrat-alternates',
   style: 'normal',
@@ -16,7 +16,7 @@ export const montserratAlternates = Montserrat_Alternates({
   subsets: ['latin'],
 });
 
-export const libreBarcode128Text = Libre_Barcode_128_Text({
+const libreBarcode128Text = Libre_Barcode_128_Text({
   display: 'swap',
   variable: '--font-montserrat-alternates',
   style: 'normal',
@@ -24,4 +24,6 @@ export const libreBarcode128Text = Libre_Barcode_128_Text({
   subsets: ['latin'],
 });
 
-export const fontVariables = `${montserrat.variable} ${montserratAlternates.variable} ${libreBarcode128Text.variable}`;
+const fontVariables = `${montserrat.variable} ${montserratAlternates.variable} ${libreBarcode128Text.variable}`;
+
+export default fontVariables;
