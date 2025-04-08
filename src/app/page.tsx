@@ -1,6 +1,6 @@
 import FlareCursor from '@/components/features/FlareCursor';
 
-export default function Home() {
+export default function Hello() {
   return (
     <div>
       <FlareCursor />

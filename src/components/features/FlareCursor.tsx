@@ -26,11 +26,13 @@ export default function FlareCursor() {
       ...mousePosition,
       height: 32,
       width: 32,
+      backgroundColor: 'var(--color-primary-t-4)',
     },
     [VARIANT_KEY.Press]: {
       ...mousePosition,
       height: 24,
       width: 24,
+      backgroundColor: 'var(--color-primary-t-4)',
     },
     [VARIANT_KEY.OnLink]: {
       ...mousePosition,
@@ -96,7 +98,7 @@ export default function FlareCursor() {
 
   return (
     <motion.div
-      className="bg-primary-t-4 pointer-events-none fixed top-0 left-0 z-8 -translate-1/2 transform-gpu rounded-full pointer-coarse:hidden"
+      className="pointer-events-none fixed top-0 left-0 z-8 -translate-1/2 transform-gpu rounded-full pointer-coarse:hidden"
       style={{
         width: 32,
         height: 32,

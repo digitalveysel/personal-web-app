@@ -18,7 +18,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 const libreBarcode128Text = Libre_Barcode_128_Text({
   display: 'swap',
-  variable: '--font-montserrat-alternates',
+  variable: '--font-libre-barcode-128-text',
   style: 'normal',
   weight: '400',
   subsets: ['latin'],

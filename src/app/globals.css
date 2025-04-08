@@ -22,7 +22,7 @@
   --font-*: initial;
   --font-montserrat: var(--font-montserrat);
   --font-montserrat-alternates: var(--font-montserrat-alternates);
-  --font-montserrat-alternates: var(--font-montserrat-alternates);
+  --font-libre-barcode-128-text: var(--font-libre-barcode-128-text);
 }
 
 :root {
