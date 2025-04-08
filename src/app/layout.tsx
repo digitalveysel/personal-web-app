@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import fontVariables from '@/lib/fonts';
+import fontVariables from '@/libs/fonts';
 import ClientThemesProvider from '@/components/providers/ClientThemeProvider';
 
 export const metadata: Metadata = {
