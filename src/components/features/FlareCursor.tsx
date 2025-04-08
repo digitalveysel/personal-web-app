@@ -97,7 +97,8 @@ export default function FlareCursor() {
   if (!isMounted) return null;
 
   return (
-    <motion.div
+    <motion.span
+      aria-hidden="true"
       className="pointer-events-none fixed top-0 left-0 z-8 -translate-1/2 transform-gpu rounded-full pointer-coarse:hidden"
       style={{
         width: 32,
