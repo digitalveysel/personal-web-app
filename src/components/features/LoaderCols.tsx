@@ -15,16 +15,18 @@ export default function LoaderColumns() {
     >
       {columns.map((_, i) => (
         <div key={i} className="relative inline-block h-screen w-1/5 align-top">
-          <motion.span
-            className="bg-background-border absolute top-0 left-0 w-px"
-            initial={{ height: 0 }}
-            animate={{ height: '100%' }}
-            transition={{
-              duration: 0.8,
-              ease: 'easeOut',
-              delay: i % 2 === 0 ? 0.8 : 0.4,
-            }}
-          />
+          {i !== 0 && (
+            <motion.span
+              className="bg-background-transparent absolute top-0 left-0 w-px"
+              initial={{ height: 0 }}
+              animate={{ height: '100%' }}
+              transition={{
+                duration: 0.8,
+                ease: 'easeOut',
+                delay: i % 2 === 0 ? 0.8 : 0.4,
+              }}
+            />
+          )}
           <motion.span
             className="bg-background-default absolute top-0 left-0 h-full w-full"
             initial={{ height: '100%' }}

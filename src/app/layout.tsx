@@ -2,6 +2,9 @@ import './globals.css';
 import type { Metadata } from 'next';
 import fontVariables from '@/libs/fonts';
 import ClientThemesProvider from '@/components/providers/ClientThemeProvider';
+import LoaderCols from '@/components/features/LoaderCols';
+import FlareCursor from '@/components/features/FlareCursor';
+import Texture from '@/components/features/Texture';
 
 export const metadata: Metadata = {
   title: 'Veysel Demirel • Veysel in the Digital World',
@@ -23,6 +26,9 @@ export default function RootLayout({
           enableColorScheme
           enableSystem
         >
+          <Texture />
+          <LoaderCols />
+          <FlareCursor />
           {children}
         </ClientThemesProvider>
       </body>
