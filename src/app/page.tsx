@@ -1,4 +1,4 @@
-import FlareCursor from '@/components/features/FlareCursor/FlareCursor';
+import FlareCursor from '@/components/features/FlareCursor';
 
 export default function Home() {
   return (
