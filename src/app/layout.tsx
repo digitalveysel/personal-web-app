@@ -5,6 +5,8 @@ import ClientThemesProvider from '@/components/providers/ClientThemeProvider';
 import LoaderCols from '@/components/features/LoaderCols';
 import FlareCursor from '@/components/features/FlareCursor';
 import Texture from '@/components/features/Texture';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'Veysel Demirel • Veysel in the Digital World',
@@ -29,7 +31,13 @@ export default function RootLayout({
           <Texture />
           <LoaderCols />
           <FlareCursor />
-          {children}
+          <div id="container" className="h-screen">
+            <Header />
+            <div id="wrapper" className="size-full px-6 pb-6 md:px-12 md:pb-12">
+              <main className="size-full">{children}</main>
+              <Footer />
+            </div>
+          </div>
         </ClientThemesProvider>
       </body>
     </html>

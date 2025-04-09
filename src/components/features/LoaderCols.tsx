@@ -2,15 +2,15 @@
 
 import { motion } from 'motion/react';
 
-const columns = Array.from({ length: 5 });
-
 export default function LoaderColumns() {
+  const columns = Array.from({ length: 5 });
+
   return (
     <motion.div
       className="pointer-events-none fixed inset-0 h-screen w-screen"
       initial={{ zIndex: '9' }}
       animate={{ zIndex: '-1' }}
-      transition={{ duration: 1, delay: 1, ease: 'linear' }}
+      transition={{ duration: 1, delay: 2, ease: 'linear' }}
       aria-hidden="true"
     >
       {columns.map((_, i) => (
@@ -21,7 +21,7 @@ export default function LoaderColumns() {
               initial={{ height: 0 }}
               animate={{ height: '100%' }}
               transition={{
-                duration: 0.8,
+                duration: 1,
                 ease: 'easeOut',
                 delay: i % 2 === 0 ? 0.8 : 0.4,
               }}
@@ -32,7 +32,7 @@ export default function LoaderColumns() {
             initial={{ height: '100%' }}
             animate={{ height: 0 }}
             transition={{
-              duration: 0.8,
+              duration: 1,
               ease: 'easeOut',
               delay: i % 2 === 0 ? 0.4 : 0.8,
             }}

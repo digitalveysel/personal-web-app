@@ -3,6 +3,10 @@
 
 @custom-variant light (&:where([data-theme=light], [data-theme=light] *));
 
+@theme {
+  --text-6xl: 4rem;
+}
+
 @theme inline {
   /* Colors */
   --color-*: initial;
