@@ -6,22 +6,6 @@ export default function SectionHello() {
   return (
     <section id="hello" className="flex size-full items-end">
       <div id="content"></div>
-      {/* <TypeAnimation
-        sequence={[
-          'I develop impressive web apps',
-          2000,
-          'I design creative web sites',
-          2000,
-          'I create useful design systems',
-          2000,
-        ]}
-        className="font-montserrat text-primary text-xl font-bold italic"
-        wrapper="h2"
-        speed={1}
-        repeat={Infinity}
-        preRenderFirstString={true}
-      /> */}
-
       <TypingAnimation
         texts={[
           'I develop impressive web apps',
