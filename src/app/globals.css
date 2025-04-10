@@ -16,6 +16,7 @@
   --color-primary-t-2: var(--color-primary-t-2);
 
   --color-background-default: var(--color-background-default);
+  --color-background-medium: var(--color-background-medium);
   --color-background-transparent: var(--color-background-transparent);
 
   --color-foreground-default: var(--color-foreground-default);
@@ -36,6 +37,7 @@
   --color-primary-t-2: oklch(0.82 0.1192 59.71 / 20%);
 
   --color-background-default: oklch(0.17 0 0);
+  --color-background-medium: oklch(0.24 0 0);
   --color-background-transparent: oklch(1 0 0 / 10%);
 
   --color-foreground-default: oklch(1 0 0);
@@ -50,6 +52,7 @@
   --color-primary-t-2: oklch(0.67 0.1258 57.11 / 20%);
 
   --color-background-default: oklch(0.99 0 0);
+  --color-background-medium: oklch(0.92 0 0);
   --color-background-transparent: oklch(0.17 0 0 / 10%);
 
   --color-foreground-default: oklch(0.17 0 0);
