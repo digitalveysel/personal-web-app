@@ -31,10 +31,10 @@ export default function RootLayout({
           <Texture />
           <LoaderCols />
           <FlareCursor />
-          <div id="container" className="h-screen">
+          <div id="container">
             <Header />
-            <div id="wrapper" className="size-full px-6 pb-6 md:px-12 md:pb-12">
-              <main className="size-full">{children}</main>
+            <div id="wrapper">
+              <main>{children}</main>
               <Footer />
             </div>
           </div>
