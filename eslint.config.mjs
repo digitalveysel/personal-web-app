@@ -20,6 +20,7 @@ const eslintConfig = [
     },
     rules: {
       'prettier/prettier': ['error', prettierConfig],
+      'react/no-unescaped-entities': 'off',
     },
   },
 ];
