@@ -5,33 +5,31 @@ import Image from 'next/image';
 
 export default function SectionHello() {
   return (
-    <section
-      id="hello"
-      className="relative flex h-[calc(100vh_-_--spacing(22))] flex-col items-start justify-end"
-    >
-      <div className="relative size-full">
+    <section id="hello" className="flex h-[calc(100vh_-_--spacing(28))] items-end overflow-hidden">
+      <div className="pointer-events-none fixed top-24 left-0 h-[calc(100vh_-_--spacing(60))] w-screen">
         <Image
           fill
           priority
           src="/images/veysel-demirel.webp"
           alt="Veysel Demirel"
-          className="object-cover object-[40%_center]"
+          className="object-cover object-[40%_center] select-none"
           style={{
             clipPath: 'polygon(24% 0%, 100% 10%, 100% 88%, 0 98%)',
           }}
         />
         <Image
           fill
+          priority
           aria-hidden
           src="/images/veysel-demirel.webp"
           alt="Veysel Demirel ghost"
-          className="-translate-x-2 -translate-y-2 object-cover object-[40%_center] opacity-20 blur-sm"
+          className="-translate-x-2 -translate-y-2 object-cover object-[40%_center] opacity-20 blur-sm select-none"
           style={{
             clipPath: 'polygon(24% 0%, 100% 10%, 100% 88%, 0 98%)',
           }}
         />
       </div>
-      <div className="space-y-3 px-6 pb-6">
+      <div className="space-y-3">
         <h1 className="font-montserrat-alternates text-xl">
           hello, i'm <span className="text-primary font-semibold">veysel demirel</span>. as a
           front-end developer and ux/ui designer based in Türkiye.

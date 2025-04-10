@@ -9,7 +9,7 @@ enum Phase {
   PAUSING = 'pausing',
 }
 
-interface TypingAnimationProps {
+interface ITypingAnimationProps {
   texts: string[];
   typeSpeed?: number;
   pauseTime?: number;
@@ -29,7 +29,7 @@ export default function TypingAnimation({
   firstClassName = '',
   secondClassName = '',
   caretClassName = '',
-}: TypingAnimationProps) {
+}: ITypingAnimationProps) {
   const [phase, setPhase] = useState<Phase>(Phase.TYPING);
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);

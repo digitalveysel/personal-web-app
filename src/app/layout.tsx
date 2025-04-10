@@ -25,6 +25,7 @@ export default function RootLayout({
         <ClientThemesProvider
           attribute="data-theme"
           defaultTheme="system"
+          storageKey="theme"
           enableColorScheme
           enableSystem
         >
@@ -33,7 +34,7 @@ export default function RootLayout({
           <FlareCursor />
           <div id="container">
             <Header />
-            <div id="wrapper">
+            <div id="wrapper" className="flex gap-6 px-6 pb-6">
               <main>{children}</main>
               <Footer />
             </div>
