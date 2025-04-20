@@ -1,2 +1,2 @@
 # DigitalVeyselWebApp
-Veysel Demirel personal web site.
+Personal web site development with Next.js.
